@@ -4,8 +4,13 @@
 ##                                                                      #
 #########################################################################
 ##                                                                      #
-## Version: 1.4                                                         #
-## Date:    26.08.2011                                                  #
+<<<<<<< .mine
+## Version: 2.2                                                         #
+## Date:    23.11.2011                                                  #
+=======
+## Version: 2.1                                                         #
+## Date:    10.11.2011                                                  #
+>>>>>>> .r37
 ##                                                                      #
 #########################################################################
 
@@ -13,7 +18,7 @@ DESCRIPTION:
 
 This tool provides a GUI for the Python network tool Scapy.
 
-It serves as a learning tool for packet generation with python and as a 
+It serves as a learning tool for packet generation with Python and as a 
 tool for rapid IPv6 packet generation.
 
 
@@ -23,7 +28,10 @@ You can simply download the current version from here:
 http://code.google.com/p/scapy-gui-ipv6/downloads/list
 
 Unzip and run the included Python 'gui.py' script as root or 
-using SUDO.
+using 'sudo'. Extended privileges are only required if the
+GUI is used to actually send packets to the network. It can
+be run by any non-priviledged users in order to build 
+Scapy-code, or save the constructed packet in a pcap-file.
 
 
 PREREQUISITES
@@ -32,20 +40,26 @@ Scapy, Python and the QT4 runtime must be installed on the machine
 for program to run. You can download the latest version of Scapy 
 here: http://www.secdev.org/projects/scapy/
 
+For all options is the packet "python-pyx" necessary.
+
 
 In order to send IPv6 packets to the network directly from the GUI, 
 you must have full privileges on the machine. Start the program with
+<<<<<<< .mine
+ $ sudo python gui.py
+=======
 
   $ sudo gui.py
 
+>>>>>>> .r37
 or a similar command depending on your platform.
 
 
 
 Copyright/License Notice
 #########################################################################
-# Copyright (c) 2011, Beuth Hochschule fuer Technik Berlin		#
-# 		scheffler[at]beuth-hochschule.de	                #
+# Copyright (c) 2011, Beuth Hochschule fuer Technik Berlin		        #
+# 		scheffler[at]beuth-hochschule.de	                            #
 # All rights reserved.                                                  #
 #                                                                       #
 # Redistribution and use in source and binary forms, with or without    #
